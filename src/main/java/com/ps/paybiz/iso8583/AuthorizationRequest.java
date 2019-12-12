@@ -25,9 +25,11 @@ public class AuthorizationRequest {
 		map.put(11, "123456"); // System Trace Audit Number
 //		map.put(42, "111111"); // Card Acceptor ID Code(Merchant ID)
 
-		System.out.println("ISO Message :" + build(map, "0200"));
+//		System.out.println("ISO Message :" + build(map, "0200"));
 
 //		parse(build(map,"0100"));
+		
+		parse("021072200000020000001163442866726501010000000010000121217350412345600");
 	}
 
 	public static String build(Map<Integer, String> input, String Mti) throws IOException, ISOException {
